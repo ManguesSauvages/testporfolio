@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Image en arrière-plan -->
+    <div class="image-background"></div>
+
+    <!-- Contenu principal -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ferri Enzo</div>
+            <ul>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div id="clock"></div>
+        </nav>
+    </header>
+
+    <!-- Section d'accueil -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue dans mon Portfolio</h1>
+            <p>Future ingénieur informatique et passionné par les technologies numériques !</p>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>À Propos de Moi</h2>
+            <div class="divider"></div>
+        </div>
+        <p>Je suis un étudiant passionné par l'informatique, avec une forte volonté d'apprendre et de contribuer à des projets innovants dans le domaine des technologies numériques. Actuellement, je suis en BTS SIO avec une spécialisation en développement informatique.</p>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Mes Projets</h2>
+            <div class="divider"></div>
+        </div>
+        <!-- Sous-catégorie : Mon Parcours Scolaire -->
+        <div class="subcategory">
+            <h3>Mon Parcours Scolaire</h3>
+            <ul>
+                <li><strong>2023-2024 :</strong> Terminale SN (Système Numérique) - Obtention du baccalauréat - Institution Saint-Aspais, MELUN</li>
+                <li><strong>2024-2025 :</strong> 1ère année BTS SIO (Services Informatiques aux Organisations) - Institution Saint-Aspais, MELUN</li>
+            </ul>
+        </div>
+        <!-- Sous-catégorie : Autres Projets -->
+        <div class="subcategory">
+            <h3>Autres Projets</h3>
+            <ul>
+                <li><strong>Site e-commerce :</strong> Création d'un site de commerce en ligne (HTML, CSS, JS, PHP)</li>
+                <li><strong>Application mobile :</strong> Développement d'une application mobile pour la gestion des tâches quotidiennes</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section de Contact -->
+    <footer id="contact" class="section">
+        <div class="section-header">
+            <h3>Contactez-moi</h3>
+            <div class="divider"></div>
+        </div>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required placeholder="Votre nom">
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required placeholder="Votre email">
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required placeholder="Votre message"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </footer>
+</body>
+</html>
